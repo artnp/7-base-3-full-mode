@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Srisakdi&display=swap');
+        body{
+            font-family: 'Srisakdi', cursive;
+            font-size:x-large
+        }
+        </style>
+    
+    <title>ดูดวง เลข ๗ ตัว ตั้ง ๓ ถาน ทำ นาย แบบ เลเอียด</title>
+</head>
+<body>
+    <center>
+    <h1>ดูดวง เลข ๗ ตัว ตั้ง ๓ ถาน ทำ นาย แบบ เลเอียด</h1>
+         
+ 
+    
+   วันเกิด: <select id="day" style="font-size:24px;">
+        <option value="วัน อาทิตย์">วัน อาทิตย์</option>
+        <option value="วัน จันทร์">วัน จันทร์</option>
+        <option value="วัน อังคาร">วัน อังคาร</option>
+        <option value="วัน พุฒ">วัน พุฒ</option>
+        <option value="วัน พฤหัศบดิ์">วัน พฤหัศบดิ์</option>
+        <option value="วัน สุกร์">วัน สุกร์</option>
+        <option value="วัน เสาร์">วัน เสาร์</option>
+      </select> 
+     เดือน: <select id="month" style="font-size:24px;">
+        <option value="1">๑</option>
+        <option value="2">๒</option>
+        <option value="3">๓</option>
+        <option value="4">๔</option>
+        <option value="5">๕</option>
+        <option value="6">๖</option>
+        <option value="7">๗</option>
+        <option value="8">๘</option>
+        <option value="9">๙</option>
+        <option value="10">๑๐</option>
+        <option value="11">๑๑</option>
+        <option value="12">๑๒</option>
+      </select>
+      ปี: <select id="year" style="font-size:24px;">
+        <option value="ชวด">ชวด</option>
+        <option value="มะแม">มะแม</option>
+        <option value="ฉลู">ฉลู</option>
+        <option value="วอก">วอก</option>
+        <option value="ขาน">ขาน</option>
+        <option value="ระกา">ระกา</option>
+        <option value="เถาะ">เถาะ</option>
+        <option value="จอ">จอ</option>
+        <option value="มะโรง">มะโรง</option>
+        <option value="กุน">กุน</option>
+        <option value="มะเสง">มะเสง</option>
+        <option value="มะเมีย">มะเมีย</option>
+      </select> 
+      => <button class="cal" onsubmit="cal()" style="font-size:18px">ทำนาย</button>
+      <br><br>
+      <table style="width: 30%;" border="1">
+        <tbody>
+        <tr>
+        <td><center><div id="d1"></div>อัตตะ</center></div></td>
+        <td><center><div id="d2"></div>หินะ</center></td>
+        <td><center><div id="d3"></div>ธะนัง</center></td>
+        <td><center><div id="d4"></div>ปีตา</center></td>
+        <td><center><div id="d5"></div>มาตา</center></td>
+        <td><center><div id="d6"></div>โภคา</center></td>
+        <td><center><div id="d7"></div>มัชฌิมา</center></td>
+        </tr>
+        <tr>
+            <td><center><div id="m1"></div>ตะนุ</center></div></td>
+            <td><center><div id="m2"></div>กะดุมภะ</center></td>
+            <td><center><div id="m3"></div>สหัชชะ</center></td>
+            <td><center><div id="m4"></div>พันธุ</center></td>
+            <td><center><div id="m5"></div>ปุตตะ</center></td>
+            <td><center><div id="m6"></div>หริ</center></td>
+            <td><center><div id="m7"></div>ปัตตนิ</center></td>
+        </tr>
+        <tr>
+            <td><center><div id="y1"></div>มรณะ</center></div></td>
+            <td><center><div id="y2"></div>สุภะ</center></td>
+            <td><center><div id="y3"></div>กัมมะ</center></td>
+            <td><center><div id="y4"></div>ลาภะ</center></td>
+            <td><center><div id="y5"></div>พยายะ</center></td>
+            <td><center><div id="y6"></div>ทาษี</center></td>
+            <td><center><div id="y7"></div>ทาษา</center></td>
+        </tr>
+        </tbody>
+        </table>
+      <hr>
+    <p></p>
+    <div id="txt"></div><br>
+    <div id="txt2"></div><br>
+    <div id="txt3"></div><br>
+    <div id="txt4"></div><br>
+    <div id="txt5"></div><br>
+    <div id="txt6"></div><br>
+    <div id="txt7"></div><br>
+    <div id="txt8"></div><br>
+    <div id="txt9"></div><br>
+    <div id="txt10"></div><br>
+    <div id="txt11"></div><br>
+    <div id="txt12"></div><br>
+    <div id="txt13"></div><br>
+    <div id="txt14"></div><br>
+    <div id="txt15"></div><br>
+    <div id="txt16"></div>
+    </center>
+    <script>
+function cal() {
+day = document.getElementById("day").value
+month = document.getElementById("month").value
+year = document.getElementById("year").value
+if (day == "วัน อาทิตย์"){
+    document.getElementById('d1').innerHTML= "๑"
+    document.getElementById('d2').innerHTML= "๒"
+    document.getElementById('d3').innerHTML= "๓"
+    document.getElementById('d4').innerHTML= "๔"
+    document.getElementById('d5').innerHTML= "๕"
+    document.getElementById('d6').innerHTML= "๖"
+    document.getElementById('d7').innerHTML= "๗"
+}else  if (day == "วัน จันทร์"){
+    document.getElementById('d1').innerHTML= "๒"
+    document.getElementById('d2').innerHTML= "๓"
+    document.getElementById('d3').innerHTML= "๔"
+    document.getElementById('d4').innerHTML= "๕"
+    document.getElementById('d5').innerHTML= "๖"
+    document.getElementById('d6').innerHTML= "๗"
+    document.getElementById('d7').innerHTML= "๑"
+} else if (day == "วัน อังคาร"){
+    document.getElementById('d1').innerHTML= "๓"
+    document.getElementById('d2').innerHTML= "๔"
+    document.getElementById('d3').innerHTML= "๕"
+    document.getElementById('d4').innerHTML= "๖"
+    document.getElementById('d5').innerHTML= "๗"
+    document.getElementById('d6').innerHTML= "๑"
+    document.getElementById('d7').innerHTML= "๒"
+} else if (day == "วัน พุฒ"){
+    document.getElementById('d1').innerHTML= "๔"
+    document.getElementById('d2').innerHTML= "๕"
+    document.getElementById('d3').innerHTML= "๖"
+    document.getElementById('d4').innerHTML= "๗"
+    document.getElementById('d5').innerHTML= "๑"
+    document.getElementById('d6').innerHTML= "๒"
+    document.getElementById('d7').innerHTML= "๓"
+} else if (day == "วัน พฤหัศบดิ์"){
+    document.getElementById('d1').innerHTML= "๕"
+    document.getElementById('d2').innerHTML= "๖"
+    document.getElementById('d3').innerHTML= "๗"
+    document.getElementById('d4').innerHTML= "๑"
+    document.getElementById('d5').innerHTML= "๒"
+    document.getElementById('d6').innerHTML= "๓"
+    document.getElementById('d7').innerHTML= "๔"
+} else if (day == "วัน สุกร์"){
+    document.getElementById('d1').innerHTML= "๖"
+    document.getElementById('d2').innerHTML= "๗"
+    document.getElementById('d3').innerHTML= "๑"
+    document.getElementById('d4').innerHTML= "๒"
+    document.getElementById('d5').innerHTML= "๓"
+    document.getElementById('d6').innerHTML= "๔"
+    document.getElementById('d7').innerHTML= "๕"
+} else if (day == "วัน เสาร์"){
+    document.getElementById('d1').innerHTML= "๗"
+    document.getElementById('d2').innerHTML= "๑"
+    document.getElementById('d3').innerHTML= "๒"
+    document.getElementById('d4').innerHTML= "๓"
+    document.getElementById('d5').innerHTML= "๔"
+    document.getElementById('d6').innerHTML= "๕"
+    document.getElementById('d7').innerHTML= "๖"
+}
+if (month == 1){
+    document.getElementById('m1').innerHTML= "๑"
+    document.getElementById('m2').innerHTML= "๒"
+    document.getElementById('m3').innerHTML= "๓"
+    document.getElementById('m4').innerHTML= "๔"
+    document.getElementById('m5').innerHTML= "๕"
+    document.getElementById('m6').innerHTML= "๖"
+    document.getElementById('m7').innerHTML= "๗"
+}else  if (month == 2){
+    document.getElementById('m1').innerHTML= "๒"
+    document.getElementById('m2').innerHTML= "๓"
+    document.getElementById('m3').innerHTML= "๔"
+    document.getElementById('m4').innerHTML= "๕"
+    document.getElementById('m5').innerHTML= "๖"
+    document.getElementById('m6').innerHTML= "๗"
+    document.getElementById('m7').innerHTML= "๑"
+} else if (month == 3){
+    document.getElementById('m1').innerHTML= "๓"
+    document.getElementById('m2').innerHTML= "๔"
+    document.getElementById('m3').innerHTML= "๕"
+    document.getElementById('m4').innerHTML= "๖"
+    document.getElementById('m5').innerHTML= "๗"
+    document.getElementById('m6').innerHTML= "๑"
+    document.getElementById('m7').innerHTML= "๒"
+} else if (month == 4){
+    document.getElementById('m1').innerHTML= "๔"
+    document.getElementById('m2').innerHTML= "๕"
+    document.getElementById('m3').innerHTML= "๖"
+    document.getElementById('m4').innerHTML= "๗"
+    document.getElementById('m5').innerHTML= "๑"
+    document.getElementById('m6').innerHTML= "๒"
+    document.getElementById('m7').innerHTML= "๓"
+} else if (month == 5){
+    document.getElementById('m1').innerHTML= "๕"
+    document.getElementById('m2').innerHTML= "๖"
+    document.getElementById('m3').innerHTML= "๗"
+    document.getElementById('m4').innerHTML= "๑"
+    document.getElementById('m5').innerHTML= "๒"
+    document.getElementById('m6').innerHTML= "๓"
+    document.getElementById('m7').innerHTML= "๔"
+} else if (month == 6){
+    document.getElementById('m1').innerHTML= "๖"
+    document.getElementById('m2').innerHTML= "๗"
+    document.getElementById('m3').innerHTML= "๑"
+    document.getElementById('m4').innerHTML= "๒"
+    document.getElementById('m5').innerHTML= "๓"
+    document.getElementById('m6').innerHTML= "๔"
+    document.getElementById('m7').innerHTML= "๕"
+} else if (month == 7){
+    document.getElementById('m1').innerHTML= "๗"
+    document.getElementById('m2').innerHTML= "๑"
+    document.getElementById('m3').innerHTML= "๒"
+    document.getElementById('m4').innerHTML= "๓"
+    document.getElementById('m5').innerHTML= "๔"
+    document.getElementById('m6').innerHTML= "๕"
+    document.getElementById('m7').innerHTML= "๖"
+} if (month == 8){
+    document.getElementById('m1').innerHTML= "๑"
+    document.getElementById('m2').innerHTML= "๒"
+    document.getElementById('m3').innerHTML= "๓"
+    document.getElementById('m4').innerHTML= "๔"
+    document.getElementById('m5').innerHTML= "๕"
+    document.getElementById('m6').innerHTML= "๖"
+    document.getElementById('m7').innerHTML= "๗"
+}  else if (month == 9){
+    document.getElementById('m1').innerHTML= "๒"
+    document.getElementById('m2').innerHTML= "๓"
+    document.getElementById('m3').innerHTML= "๔"
+    document.getElementById('m4').innerHTML= "๕"
+    document.getElementById('m5').innerHTML= "๖"
+    document.getElementById('m6').innerHTML= "๗"
+    document.getElementById('m7').innerHTML= "๑"
+} else if (month == 10){
+    document.getElementById('m1').innerHTML= "๓"
+    document.getElementById('m2').innerHTML= "๔"
+    document.getElementById('m3').innerHTML= "๕"
+    document.getElementById('m4').innerHTML= "๖"
+    document.getElementById('m5').innerHTML= "๗"
+    document.getElementById('m6').innerHTML= "๑"
+    document.getElementById('m7').innerHTML= "๒"
+} else if (month == 11){
+    document.getElementById('m1').innerHTML= "๔"
+    document.getElementById('m2').innerHTML= "๕"
+    document.getElementById('m3').innerHTML= "๖"
+    document.getElementById('m4').innerHTML= "๗"
+    document.getElementById('m5').innerHTML= "๑"
+    document.getElementById('m6').innerHTML= "๒"
+    document.getElementById('m7').innerHTML= "๓"
+} else if (month == 12){
+    document.getElementById('m1').innerHTML= "๕"
+    document.getElementById('m2').innerHTML= "๖"
+    document.getElementById('m3').innerHTML= "๗"
+    document.getElementById('m4').innerHTML= "๑"
+    document.getElementById('m5').innerHTML= "๒"
+    document.getElementById('m6').innerHTML= "๓"
+    document.getElementById('m7').innerHTML= "๔"
+}
+if (year == "ชวด"){
+    document.getElementById('y1').innerHTML= "๑"
+    document.getElementById('y2').innerHTML= "๒"
+    document.getElementById('y3').innerHTML= "๓"
+    document.getElementById('y4').innerHTML= "๔"
+    document.getElementById('y5').innerHTML= "๕"
+    document.getElementById('y6').innerHTML= "๖"
+    document.getElementById('y7').innerHTML= "๗"
+} else if (year == "มะแม"){
+    document.getElementById('y1').innerHTML= "๑"
+    document.getElementById('y2').innerHTML= "๒"
+    document.getElementById('y3').innerHTML= "๓"
+    document.getElementById('y4').innerHTML= "๔"
+    document.getElementById('y5').innerHTML= "๕"
+    document.getElementById('y6').innerHTML= "๖"
+    document.getElementById('y7').innerHTML= "๗"
+} else if (year == "ฉลู"){
+    document.getElementById('y1').innerHTML= "๒"
+    document.getElementById('y2').innerHTML= "๓"
+    document.getElementById('y3').innerHTML= "๔"
+    document.getElementById('y4').innerHTML= "๕"
+    document.getElementById('y5').innerHTML= "๖"
+    document.getElementById('y6').innerHTML= "๗"
+    document.getElementById('y7').innerHTML= "๑"
+} else if (year == "วอก"){
+    document.getElementById('y1').innerHTML= "๒"
+    document.getElementById('y2').innerHTML= "๓"
+    document.getElementById('y3').innerHTML= "๔"
+    document.getElementById('y4').innerHTML= "๕"
+    document.getElementById('y5').innerHTML= "๖"
+    document.getElementById('y6').innerHTML= "๗"
+    document.getElementById('y7').innerHTML= "๑"
+} else if (year == "ขาน" ){
+    document.getElementById('y1').innerHTML= "๓"
+    document.getElementById('y2').innerHTML= "๔"
+    document.getElementById('y3').innerHTML= "๕"
+    document.getElementById('y4').innerHTML= "๖"
+    document.getElementById('y5').innerHTML= "๗"
+    document.getElementById('y6').innerHTML= "๑"
+    document.getElementById('y7').innerHTML= "๒"
+} else if (year == "ระกา"){
+    document.getElementById('y1').innerHTML= "๓"
+    document.getElementById('y2').innerHTML= "๔"
+    document.getElementById('y3').innerHTML= "๕"
+    document.getElementById('y4').innerHTML= "๖"
+    document.getElementById('y5').innerHTML= "๗"
+    document.getElementById('y6').innerHTML= "๑"
+    document.getElementById('y7').innerHTML= "๒"
+} else if (year == "เถาะ"){
+    document.getElementById('y1').innerHTML= "๔"
+    document.getElementById('y2').innerHTML= "๕"
+    document.getElementById('y3').innerHTML= "๖"
+    document.getElementById('y4').innerHTML= "๗"
+    document.getElementById('y5').innerHTML= "๑"
+    document.getElementById('y6').innerHTML= "๒"
+    document.getElementById('y7').innerHTML= "๓"
+} else if (year == "จอ"){
+    document.getElementById('y1').innerHTML= "๔"
+    document.getElementById('y2').innerHTML= "๕"
+    document.getElementById('y3').innerHTML= "๖"
+    document.getElementById('y4').innerHTML= "๗"
+    document.getElementById('y5').innerHTML= "๑"
+    document.getElementById('y6').innerHTML= "๒"
+    document.getElementById('y7').innerHTML= "๓"
+} else if (year == "มะโรง"){
+    document.getElementById('y1').innerHTML= "๕"
+    document.getElementById('y2').innerHTML= "๖"
+    document.getElementById('y3').innerHTML= "๗"
+    document.getElementById('y4').innerHTML= "๑"
+    document.getElementById('y5').innerHTML= "๒"
+    document.getElementById('y6').innerHTML= "๓"
+    document.getElementById('y7').innerHTML= "๔"
+} else if (year == "กุน"){
+    document.getElementById('y1').innerHTML= "๕"
+    document.getElementById('y2').innerHTML= "๖"
+    document.getElementById('y3').innerHTML= "๗"
+    document.getElementById('y4').innerHTML= "๑"
+    document.getElementById('y5').innerHTML= "๒"
+    document.getElementById('y6').innerHTML= "๓"
+    document.getElementById('y7').innerHTML= "๔"
+} else if (year == "มะเสง"){
+    document.getElementById('y1').innerHTML= "๖"
+    document.getElementById('y2').innerHTML= "๗"
+    document.getElementById('y3').innerHTML= "๑"
+    document.getElementById('y4').innerHTML= "๒"
+    document.getElementById('y5').innerHTML= "๓"
+    document.getElementById('y6').innerHTML= "๔"
+    document.getElementById('y7').innerHTML= "๕"
+} else if (year == "มะเมีย"){
+    document.getElementById('y1').innerHTML= "๗"
+    document.getElementById('y2').innerHTML= "๑"
+    document.getElementById('y3').innerHTML= "๒"
+    document.getElementById('y4').innerHTML= "๓"
+    document.getElementById('y5').innerHTML= "๔"
+    document.getElementById('y6').innerHTML= "๕"
+    document.getElementById('y7').innerHTML= "๖"
+}
+
+function text(){
+    document.getElementById("d1").style.backgroundColor = 'white'
+    document.getElementById("d2").style.backgroundColor = 'white'
+    document.getElementById("d3").style.backgroundColor = 'white'
+    document.getElementById("d4").style.backgroundColor = 'white'
+    document.getElementById("d5").style.backgroundColor = 'white'
+    document.getElementById("d6").style.backgroundColor = 'white'
+    document.getElementById("d7").style.backgroundColor = 'white'
+    document.getElementById("m1").style.backgroundColor = 'white'
+    document.getElementById("m2").style.backgroundColor = 'white'
+    document.getElementById("m3").style.backgroundColor = 'white'
+    document.getElementById("m4").style.backgroundColor = 'white'
+    document.getElementById("m5").style.backgroundColor = 'white'
+    document.getElementById("m6").style.backgroundColor = 'white'
+    document.getElementById("m7").style.backgroundColor = 'white'
+    document.getElementById("y1").style.backgroundColor = 'white'
+    document.getElementById("y2").style.backgroundColor = 'white'
+    document.getElementById("y3").style.backgroundColor = 'white'
+    document.getElementById("y4").style.backgroundColor = 'white'
+    document.getElementById("y5").style.backgroundColor = 'white'
+    document.getElementById("y6").style.backgroundColor = 'white'
+    document.getElementById("y7").style.backgroundColor = 'white'
+if (document.getElementById('d1').textContent === document.getElementById('m1').textContent){
+    document.getElementById('txt').innerHTML = "• ตน ต้อง พึ่ง ตน เอง จะ หมาย เอา ผู้ อื่น เป็น ที่ พึ่ง ไม่ ได้ ผู้ นั้น จะ ดี ก็ ได้ ดี เพราะ ตัว เอง จะ ชั่ว ก็ ชั่ว เพราะ ตัว เอง แล"
+    document.getElementById("d1").style.backgroundColor = 'red'
+    document.getElementById("m1").style.backgroundColor = 'red'
+} else if (document.getElementById('d1').textContent == document.getElementById('m2').textContent){
+    document.getElementById('txt').innerHTML = "• ผู้ นั้น เปน คน ไม่ มี ยศ ศักดิ์ ถึง จะ มี ทรัพย์ ก็ พอ ประ มาณ จะ ทำ ราชการ ไม่ ดี"
+    document.getElementById("d1").style.backgroundColor = 'red'
+    document.getElementById("m2").style.backgroundColor = 'red'
+} else if (document.getElementById('d1').textContent == document.getElementById('m3').textContent){
+    document.getElementById('txt').innerHTML = "• ผู้ นั้น มัก จะ ชอบ คบ เพื่อน ฝูง มาก มัก ชอบ คบ คน ที่ เสมอ น้ำ เสมอ เนื้อ กัน เอา เปน มิตร แล"
+    document.getElementById("d1").style.backgroundColor = 'red'
+    document.getElementById("m3").style.backgroundColor = 'red'
+} else if (document.getElementById('d1').textContent == document.getElementById('m4').textContent){
+    document.getElementById('txt').innerHTML = "• ผู้ นั้น มี พวก พ้อง พี่ น้อง มาก เปน ที่ นับ ถือ ของ พงษ พันธ์ ทั้ง หลาย จะ ได้ พึ่ง กัน แล กัน"
+    document.getElementById("d1").style.backgroundColor = 'red'
+    document.getElementById("m4").style.backgroundColor = 'red'
+} else if (document.getElementById('d1').textContent == document.getElementById('m5').textContent){
+    document.getElementById('txt').innerHTML = "• ผู้ นั้น จะ มี บุตร ได้ สืบ ตระกูล ถ้า ตน เปน คน ประ พฤติ์ การ สิ่ง ใด บุตร ก็ มัก จะ ประพฤติ์ การ สิ่ง นั้น เช่น เดียว กัน กับ ตน แล"
+    document.getElementById("d1").style.backgroundColor = 'red'
+    document.getElementById("m5").style.backgroundColor = 'red'
+} else if (document.getElementById('d1').textContent == document.getElementById('m6').textContent == document.getElementById('y2').textContent){
+    document.getElementById('txt').innerHTML = "• -"
+} else if (document.getElementById('d1').textContent == document.getElementById('m6').textContent){
+    document.getElementById('txt').innerHTML = "• ผู้ นั้น เปน คน อาภัพ ตน จะ โทษ แก่ ตน เอง มัก จะ ต้อง ตก ระกำ ลำ บาก อีก ไนย หนึ่ง ท่าน ว่า เปน คน โมโห มาก โกรธ ขึ้ง ผู้ อื่น มัก ทำ ตัว เอง"
+    document.getElementById("d1").style.backgroundColor = 'red'
+    document.getElementById("m6").style.backgroundColor = 'red'
+} else if (document.getElementById('d1').textContent == document.getElementById('m7').textContent){
+    document.getElementById('txt').innerHTML = "• ผู้ นั้น จะ ได้ คู่ มี วาศนา เสมอ กัน จะ เปน น้ำ หนึ่ง ใจ เดียว กัน จะ ดี ก็ ดี ด้วย กัน จะ ชั่ว ก็ ชั่ว ด้วย กัน แล"
+    document.getElementById("d1").style.backgroundColor = 'red'
+    document.getElementById("m7").style.backgroundColor = 'red'
+} if (document.getElementById('d1').textContent == document.getElementById('y1').textContent){
+    document.getElementById('txt2').innerHTML = "• ผู้ นั้น จะ อายุ ไม่ ยืน ถ้า มิ ฉะนั้น มัก จะ เจ็บ ไข้ ได้ ทุกข์ แล"
+    document.getElementById("d1").style.backgroundColor = 'red'
+    document.getElementById("y1").style.backgroundColor = 'red'
+} else if (document.getElementById('d1').textContent == document.getElementById('y2').textContent){
+    document.getElementById('txt2').innerHTML = "• ผู้ นั้น เปน คน สุ ภาพ เรียบ ร้อย ใจ บุญ จะ มี วาศนา ถ้า ทำ ราช การ จะ ได้ เปน ใหญ่ เจรจา สัตย์ ซื่อ เปน ที่ นับ ถือ แห่ง ชน ทั้ง หลาย แล"
+    document.getElementById("d1").style.backgroundColor = 'red'
+    document.getElementById("y2").style.backgroundColor = 'red'
+} else if (document.getElementById('d1').textContent == document.getElementById('y3').textContent){
+    document.getElementById('txt2').innerHTML = "• ผู้ นั้น มัก จะ กำ พร้า มี ทุกข์ มาก เปน คน ใจ ร้อน ไม่ ค่อย มี ความ ศุข แล"
+    document.getElementById("d1").style.backgroundColor = 'red'
+    document.getElementById("y3").style.backgroundColor = 'red'
+} else if (document.getElementById('d1').textContent == document.getElementById('y4').textContent){
+    document.getElementById('txt2').innerHTML = "• ผู้ นั้น มี มี ทรัพย์ สิน บริบูณ จะ ทำ มา หา กิน ก็ ได้ ลาภ เนือง ๆ ทำ ราชการ ก็ จะได้ บำ เหน็ด รางวัล เสมอ แล"
+    document.getElementById("d1").style.backgroundColor = 'red'
+    document.getElementById("y4").style.backgroundColor = 'red'
+} else if (document.getElementById('d1').textContent == document.getElementById('y5').textContent){
+    document.getElementById('txt2').innerHTML = "• ผู้ นั้น เปน คน มี โรค ติด ตัว ถ้า มิ ฉะนั้น จะ มี คน เบียด เบียฬ ทำ ให้ เดือด เนื้อ ร้อน ใจ แล"
+    document.getElementById("d1").style.backgroundColor = 'red'
+    document.getElementById("y5").style.backgroundColor = 'red'
+} else if (document.getElementById('d1').textContent == document.getElementById('y6').textContent){
+    document.getElementById('txt2').innerHTML = "• ผู้ นั้น จะ ต้อง ให้ ท่าน ใช้ ได้ ความ ลำบาก อิก ไหนหนึ่ง ทาย ว่า ถึง จะ มี เงิน ก็ ต้อง เหนื่อย เช่น ทาษี ทาษา แล"
+    document.getElementById("d1").style.backgroundColor = 'red'
+    document.getElementById("y6").style.backgroundColor = 'red'
+} else if (document.getElementById('d1').textContent == document.getElementById('y7').textContent){
+    document.getElementById('txt2').innerHTML = "• ผู้ นั้น จะ ต้อง ให้ ท่าน ใช้ ได้ ความ ลำบาก อิก ไหนหนึ่ง ทาย ว่า ถึง จะ มี เงิน ก็ ต้อง เหนื่อย เช่น ทาษี ทาษา แล"
+    document.getElementById("d1").style.backgroundColor = 'red'
+    document.getElementById("y7").style.backgroundColor = 'red'
+} if (document.getElementById('m1').textContent == document.getElementById('d2').textContent == document.getElementById('y2').textContent){
+    document.getElementById('txt3').innerHTML = "• -"
+} else if (document.getElementById('m1').textContent == document.getElementById('d2').textContent == document.getElementById('y2').textContent){
+    document.getElementById('txt3').innerHTML = "• ผู้ นั้น ไม่ มี วาสนา เลย เปน คน อาภัพ นัก รูประ พรรณ เลว ทราม กิริยา ไม่ เรียบ ร้อย "
+    document.getElementById("m1").style.backgroundColor = '#94FFF4'
+    document.getElementById("d2").style.backgroundColor = '#94FFF4'
+    document.getElementById("y2").style.backgroundColor = '#94FFF4'
+} else if (document.getElementById('m1').textContent == document.getElementById('d3').textContent){
+    document.getElementById('txt3').innerHTML = "• ผู้ นั้น เปน คน มั่ง มี ทรัพย์ สิน เงิน ทอง อาไศรย น้ำ พัก น้ำ แรง ของ ตน ทำได้ เอง ถ้า ทำ ราชการ จะ มี ยศ ศักดิ์ ถึง เลข อื่น ชั่ว ก็ พอ หา เลี้ยง ตัว ได้ รูประ พรรณ เปน เจ้า ทรัพย์ แล"
+    document.getElementById("m1").style.backgroundColor = '#94FFF4'
+    document.getElementById("d3").style.backgroundColor = '#94FFF4'
+} else if (document.getElementById('m1').textContent == document.getElementById('d4').textContent){
+    document.getElementById('txt3').innerHTML = "• รูประพรรณคล้าย คลึง ไป ข้าง พงษ พันธุ์ บิดา"
+    document.getElementById("m1").style.backgroundColor = '#94FFF4'
+    document.getElementById("d4").style.backgroundColor = '#94FFF4'
+} else if (document.getElementById('m1').textContent == document.getElementById('d5').textContent){
+    document.getElementById('txt3').innerHTML = "• รูประพรรณคล้าย คลึง ไป ข้าง พงษ พันธุ์ ฝ่าย มารดา แล"
+    document.getElementById("m1").style.backgroundColor = '#94FFF4'
+    document.getElementById("d5").style.backgroundColor = '#94FFF4'
+} else if (document.getElementById('m1').textContent == document.getElementById('d7').textContent){
+    document.getElementById('txt3').innerHTML = "• ผู้ นั้น เปน คน ปาน กลาง จะ มั่ง มี ก็ ไม่ มาก จะ ยาก ก็ ไม่ จบ รูป ร่าง สัน ทัด เปน คน ใจ ฅอ เฉื่อยๆ"
+    document.getElementById("m1").style.backgroundColor = '#94FFF4'
+    document.getElementById("d7").style.backgroundColor = '#94FFF4'
+} else if (document.getElementById('m1').textContent == document.getElementById('y1').textContent && document.getElementById('d3').textContent == '๔' || document.getElementById('d6').textContent == '๔' || document.getElementById('y2').textContent == '๔' || document.getElementById('y4').textContent == '๔'){
+    document.getElementById('txt3').innerHTML = "• มี เลข ดี คุ้ม ไว้ ก็ ค่อย ยัง ชั่ว มัก จะ เปน คน ขี้ โรค แล"
+    document.getElementById("m1").style.backgroundColor = '#94FFF4'
+    document.getElementById("y1").style.backgroundColor = '#94FFF4'
+    document.getElementById("d3").style.backgroundColor = 'black'
+    document.getElementById("d6").style.backgroundColor = 'black'
+    document.getElementById("y2").style.backgroundColor = 'black'
+} else if (document.getElementById('m1').textContent == document.getElementById('y1').textContent){
+    document.getElementById('txt3').innerHTML = "• ผู้ นั้น มัก จะ ถอย อายุ"
+    document.getElementById("m1").style.backgroundColor = '#94FFF4'
+    document.getElementById("y1").style.backgroundColor = '#94FFF4'
+} else if (document.getElementById('m1').textContent == document.getElementById('y2').textContent == document.getElementById('d2').textContent){
+    document.getElementById('txt3').innerHTML = "• ดวง ชาตา ยัง ไม่ ดี นัก แล"
+    document.getElementById("m1").style.backgroundColor = '#94FFF4'
+    document.getElementById("y2").style.backgroundColor = '#94FFF4'
+    document.getElementById("d2").style.backgroundColor = 'black'
+} else if (document.getElementById('m1').textContent == document.getElementById('y2').textContent){
+    document.getElementById('txt3').innerHTML = "• ผู้ นั้น เปน คน ใจ บุญ มี วาศนา ใจ คอ สัตย์ ซื่อ เจรจา เพราะ รูปร่าง งด งาม ถ้า ทำ ราชการ ดี นัก"
+    document.getElementById("m1").style.backgroundColor = '#94FFF4'
+    document.getElementById("y2").style.backgroundColor = '#94FFF4'
+} else if (document.getElementById('m1').textContent == document.getElementById('y3').textContent){
+    document.getElementById('txt3').innerHTML = "• ผู้ นั้น เปน คน มี ทุกข์ มาก มัก จะ มี โรค จะ ทำ มา หากิน มิ สู้ บริบูรณ์ รูปร่าง มัก จะ มี ตำหนิ มิฉนั้น จะ เปน คน กำพร้า แล"
+    document.getElementById("m1").style.backgroundColor = '#94FFF4'
+    document.getElementById("y3").style.backgroundColor = '#94FFF4'
+} else if (document.getElementById('m1').textContent == document.getElementById('y4').textContent == document.getElementById('d2').textContent){
+    document.getElementById('txt3').innerHTML = "• ดวง ชาตา ยัง ไม่ ดี นัก แล"
+    document.getElementById("m1").style.backgroundColor = '#94FFF4'
+    document.getElementById("y4").style.backgroundColor = '#94FFF4'
+    document.getElementById("d2").style.backgroundColor = 'black'
+} else if (document.getElementById('m1').textContent == document.getElementById('y4').textContent){
+    document.getElementById('txt3').innerHTML = "• ผู้ นั้น เปน จะ มี ลาภ จะ ทำ สิ่ง ใด ก็ เกิด ผล ทุก สิ่ง ถ้า ทำ ราชการ จะ ได้ ดี รูปร่าง โอ โถง ดี"
+    document.getElementById("m1").style.backgroundColor = '#94FFF4'
+    document.getElementById("y4").style.backgroundColor = '#94FFF4'
+} else if (document.getElementById('m1').textContent == document.getElementById('y5').textContent){
+    document.getElementById('txt3').innerHTML = "• ผู้ นั้น เปน คน ขี้ โรค มัก จะ เจ็บ ไข้ บ่อย ๆ มิฉนั้น จะ มี ผู้ เบียด เบียฬ ต้อง เดือด เนื้อ ร้อน ใจ รูประพรรณ เปน คน ขี้ โรค"
+    document.getElementById("m1").style.backgroundColor = '#94FFF4'
+    document.getElementById("y5").style.backgroundColor = '#94FFF4'
+} else if (document.getElementById('m1').textContent == document.getElementById('y6').textContent){
+    document.getElementById('txt3').innerHTML = "• ผู้ นั้น เปน คน อาภัพ ต้อง เหนื่อย มาก จะ กิน จะ อยู่ ก็ ไม่ อุดม ถึง จะ มี ทรัพย์ ก็ ต้อง เหนื่อย รูปร่าง ปาน กลาง แล"
+    document.getElementById("m1").style.backgroundColor = '#94FFF4'
+    document.getElementById("y6").style.backgroundColor = '#94FFF4'
+} else if (document.getElementById('m1').textContent == document.getElementById('y7').textContent){
+    document.getElementById('txt3').innerHTML = "• ผู้ นั้น เปน คน อาภัพ ต้อง เหนื่อย มาก จะ กิน จะ อยู่ ก็ ไม่ อุดม ถึง จะ มี ทรัพย์ ก็ ต้อง เหนื่อย รูปร่าง ปาน กลาง แล"
+    document.getElementById("m1").style.backgroundColor = '#94FFF4'
+    document.getElementById("y7").style.backgroundColor = '#94FFF4'
+} if (document.getElementById('d3').textContent == document.getElementById('m2').textContent == document.getElementById('y2').textContent){
+    document.getElementById('txt4').innerHTML = "• ดวง ชาตา ไม่ ดี ไม่ ร้าย แล"
+    document.getElementById("d3").style.backgroundColor = '#FFF094'
+    document.getElementById("m2").style.backgroundColor = '#FFF094'
+    document.getElementById("y2").style.backgroundColor = 'black'
+} else if (document.getElementById('d3').textContent == document.getElementById('m2').textContent){
+    document.getElementById('txt4').innerHTML = "• ผู้ นั้น ไม่ บริบูณ มัก จะ ขัด ข้อง มัก จะ มี ผู้ ดู หมิ่น เขา ไม่ นับ ถือ ตน ถ้า"
+    document.getElementById("d3").style.backgroundColor = '#FFF094'
+    document.getElementById("m2").style.backgroundColor = '#FFF094'
+} else if (document.getElementById('d3').textContent == document.getElementById('m3').textContent){
+    document.getElementById('txt4').innerHTML = "• ผู้ นั้น มัก พอ ใจ คบ หา เพื่อน ฝูง ที่ มั่ง มี บริบูรณ์ แล"
+    document.getElementById("d3").style.backgroundColor = '#FFF094'
+    document.getElementById("m3").style.backgroundColor = '#FFF094'
+} else if (document.getElementById('d3').textContent == document.getElementById('m4').textContent == document.getElementById('y4').textContent){
+    document.getElementById('txt4').innerHTML = "• ผู้ นั้น จะ ได้ ลาภ เพราะ พี่ น้อง ของ ตน แล"
+    document.getElementById("d3").style.backgroundColor = '#FFF094'
+    document.getElementById("m4").style.backgroundColor = '#FFF094'
+    document.getElementById("y4").style.backgroundColor = '#FFF094'
+} else if (document.getElementById('d3').textContent == document.getElementById('m4').textContent){
+    document.getElementById('txt4').innerHTML = "• ผู้ นั้น จะ มี พวก พ้อง พี่ น้อง ที่ มั่ง มี บริบูรณ์ แล"
+    document.getElementById("d3").style.backgroundColor = '#FFF094'
+    document.getElementById("m4").style.backgroundColor = '#FFF094'
+} else if (document.getElementById('d3').textContent == document.getElementById('m5').textContent){
+    document.getElementById('txt4').innerHTML = "• ผู้ นั้น จะ มี บุตร ดี จะ ได้ พึ่ง บุตร"
+    document.getElementById("d3").style.backgroundColor = '#FFF094'
+    document.getElementById("m5").style.backgroundColor = '#FFF094'
+} else if (document.getElementById('d3').textContent == document.getElementById('m6').textContent == document.getElementById('y2').textContent){
+    document.getElementById('txt4').innerHTML = "• -"
+} else if (document.getElementById('d3').textContent == document.getElementById('m6').textContent){
+    document.getElementById('txt4').innerHTML = "• ผู้ นั้น ถึง จะ มี ทรัพย์ ก็ เอา ไว้ ไม่ คง มัก จะ มี สัตรู ปอง ร้าย มิ ฉนั้น มัก จะ ต้อง ไภย ต่าง ๆ ทรัพย์ นั้น จะ ให้ โทษ แก่ ตน"
+    document.getElementById("d3").style.backgroundColor = '#FFF094'
+    document.getElementById("m6").style.backgroundColor = '#FFF094'
+} else if (document.getElementById('d3').textContent == document.getElementById('m7').textContent == document.getElementById('y2').textContent || document.getElementById('d3').textContent == document.getElementById('m7').textContent == document.getElementById('y4').textContent){
+    document.getElementById('txt4').innerHTML = "• ผู้ นั้น จะ ได้ พึ่ง คู่ ของ ตน"
+    document.getElementById("d3").style.backgroundColor = '#FFF094'
+    document.getElementById("m7").style.backgroundColor = '#FFF094'
+    document.getElementById("y2").style.backgroundColor = 'black'
+    document.getElementById("y4").style.backgroundColor = 'black'
+} else if (document.getElementById('d3').textContent == document.getElementById('m7').textContent || document.getElementById('d3').textContent == document.getElementById('y3').textContent || document.getElementById('d3').textContent == document.getElementById('y6').textContent || document.getElementById('d3').textContent == document.getElementById('y7').textContent){
+    document.getElementById('txt4').innerHTML = "• คู่ นั้น เปน บริบูรณ ที่ เดียว ยัง ไม่ ได้ แล"
+    document.getElementById("d3").style.backgroundColor = '#FFF094'
+    document.getElementById("m7").style.backgroundColor = '#FFF094'
+    document.getElementById("y3").style.backgroundColor = 'black'
+    document.getElementById("y6").style.backgroundColor = 'black'
+    document.getElementById("y7").style.backgroundColor = 'black'
+} else if (document.getElementById('d3').textContent == document.getElementById('m7').textContent){
+    document.getElementById('txt4').innerHTML = "• ผู้ นั้น ถึง จะ ได้ คู่ ที่ เปน ผู้ ดี คู่ ของ ตน เปน คน มั่ง มี"
+    document.getElementById("d3").style.backgroundColor = '#FFF094'
+    document.getElementById("m7").style.backgroundColor = '#FFF094'
+} else if (document.getElementById('d3').textContent == document.getElementById('y1').textContent){
+    document.getElementById('txt4').innerHTML = "• ผู้ นั้น ทรัพย์ สิน จะ ไม่ บริ บูรณ จะ ขัด สน แล"
+    document.getElementById("d3").style.backgroundColor = '#FFF094'
+    document.getElementById("y1").style.backgroundColor = '#FFF094'
+} else if (document.getElementById('d3').textContent == document.getElementById('y2').textContent == document.getElementById('m2').textContent){
+    document.getElementById('txt4').innerHTML = "• ดวง ชาตา ยัง ไม่ ดี นัก แล"
+    document.getElementById("d3").style.backgroundColor = '#FFF094'
+    document.getElementById("y2").style.backgroundColor = '#FFF094'
+    document.getElementById("m2").style.backgroundColor = '#FFF094'
+} else if (document.getElementById('d3').textContent == document.getElementById('y2').textContent == document.getElementById('m6').textContent){
+    document.getElementById('txt4').innerHTML = "• ดวง ชาตา ยัง ไม่ ดี นัก แล"
+    document.getElementById("d3").style.backgroundColor = '#FFF094'
+    document.getElementById("y2").style.backgroundColor = '#FFF094'
+    document.getElementById("m6").style.backgroundColor = '#FFF094'
+} else if (document.getElementById('d3').textContent == document.getElementById('y2').textContent){
+    document.getElementById('txt4').innerHTML = "• จะ มี ทรัพย์ สิน เงิน ทอง มาก"
+    document.getElementById("d3").style.backgroundColor = '#FFF094'
+    document.getElementById("y2").style.backgroundColor = '#FFF094'
+} else if (document.getElementById('d3').textContent == document.getElementById('y3').textContent){
+    document.getElementById('txt4').innerHTML = "• ผู้ นั้น จะ ต้อง ขัด สน แล"
+    document.getElementById("d3").style.backgroundColor = '#FFF094'
+    document.getElementById("y3").style.backgroundColor = '#FFF094'
+} else if (document.getElementById('d3').textContent == document.getElementById('y4').textContent == document.getElementById('m2').textContent){
+    document.getElementById('txt4').innerHTML = "• ผู้ นั้น จะ เสื่อม ลาภ มิ ดี มัก จะ ขัด สน แล"
+    document.getElementById("d3").style.backgroundColor = '#FFF094'
+    document.getElementById("y4").style.backgroundColor = '#FFF094'
+    document.getElementById("m2").style.backgroundColor = '#FFF094'
+} else if (document.getElementById('d3').textContent == document.getElementById('y4').textContent == document.getElementById('m6').textContent){
+    document.getElementById('txt4').innerHTML = "• ผู้ นั้น จะ เสื่อม ลาภ มิ ดี มัก จะ ขัด สน แล"
+    document.getElementById("d3").style.backgroundColor = '#FFF094'
+    document.getElementById("y4").style.backgroundColor = '#FFF094'
+    document.getElementById("m6").style.backgroundColor = '#FFF094'
+} else if (document.getElementById('d3').textContent == document.getElementById('y4').textContent){
+    document.getElementById('txt4').innerHTML = "• ผู้ นั้น จะ มี ทรัพย์ สิน บริบูรณ จะ ทำ การ สิ่ง ได ก็ เกิด ผล มาก"
+    document.getElementById("d3").style.backgroundColor = '#FFF094'
+    document.getElementById("y4").style.backgroundColor = '#FFF094'
+} else if (document.getElementById('d3').textContent == document.getElementById('y6').textContent){
+    document.getElementById('txt4').innerHTML = "• ผู้ นั้น จะ มี ทรัพย์ ก็ไม่ มี มาก อีก ไนยหนึ่ง ท่าน ทาย ว่า ผู้ นั้น ถึง จะ มี ทรัพย์ ต้อง ใช้ ตน เอง แล"
+    document.getElementById("d3").style.backgroundColor = '#FFF094'
+    document.getElementById("y6").style.backgroundColor = '#FFF094'
+} else if (document.getElementById('d3').textContent == document.getElementById('y7').textContent){
+    document.getElementById('txt4').innerHTML = "• ผู้ นั้น จะ มี ทรัพย์ ก็ไม่ มี มาก อีก ไนยหนึ่ง ท่าน ทาย ว่า ผู้ นั้น ถึง จะ มี ทรัพย์ ต้อง ใช้ ตน เอง แล"
+    document.getElementById("d3").style.backgroundColor = '#FFF094'
+    document.getElementById("y7").style.backgroundColor = '#FFF094'
+} if (document.getElementById('d6').textContent == document.getElementById('m3').textContent){
+    document.getElementById('txt5').innerHTML = "• ผู้ นั้น ชอบ คบ คน ผู้ ดี มี เพื่อน ผูง ล้วน แต่ คน มั่ง มี จะ ได้ พึ่ง มิตร แล"
+    document.getElementById("d6").style.backgroundColor = '#C3FF94'
+    document.getElementById("m3").style.backgroundColor = '#C3FF94'
+} else if (document.getElementById('d6').textContent == document.getElementById('m6').textContent){
+    document.getElementById('txt5').innerHTML = "• ผู้ นั้น หา ทรัพย์ สมบัติ มิได้ เลย ถึง จะ มี ก็ ต้อง เกิด ถ้อย ความ มัก จะ มี ไภย ต่าง ๆ แล"
+    document.getElementById("d6").style.backgroundColor = '#C3FF94'
+    document.getElementById("m6").style.backgroundColor = '#C3FF94'
+} else if (document.getElementById('d6').textContent == document.getElementById('y1').textContent){
+    document.getElementById('txt5').innerHTML = "• ผู้ นั้น หา ทรัพย์ สมบัติ มิ ได้ เลย มัก จะ ต้อง ตก เข็ญ ใจ ไร้ ทรัพย์ แล"
+    document.getElementById("d6").style.backgroundColor = '#C3FF94'
+    document.getElementById("y1").style.backgroundColor = '#C3FF94'
+} else if (document.getElementById('d6').textContent == document.getElementById('y2').textContent == document.getElementById('m6').textContent || document.getElementById('d6').textContent == document.getElementById('y2').textContent == document.getElementById('m2').textContent){
+    document.getElementById('txt5').innerHTML = "• -"
+} else if (document.getElementById('d6').textContent == document.getElementById('y2').textContent){
+    document.getElementById('txt5').innerHTML = "• ผู้ นั้น จะ ได้ ทรัพย์ สมบัติ บริบูรณ์ นัก ทำ ราชการ จะ ได้ เปน ใหญ่"
+    document.getElementById("d6").style.backgroundColor = '#C3FF94'
+    document.getElementById("y2").style.backgroundColor = '#C3FF94'
+} else if (document.getElementById('d6').textContent == document.getElementById('y3').textContent){
+    document.getElementById('txt5').innerHTML = "• ผู้ นั้น ไร้ ทรัพย์ ถึงจะ มี ก็ รักษา ไว้ ไม่ ยืด มัก จะ ต้อง ไภย ต่าง ๆ แล"
+    document.getElementById("d6").style.backgroundColor = '#C3FF94'
+    document.getElementById("y3").style.backgroundColor = '#C3FF94'
+} else if (document.getElementById('d6').textContent == document.getElementById('y4').textContent == document.getElementById('m6').textContent){
+    document.getElementById('txt5').innerHTML = "• จะ เสื่อม ลาภ มิ ดี แล"
+    document.getElementById("d6").style.backgroundColor = '#C3FF94'
+    document.getElementById("y4").style.backgroundColor = '#C3FF94'
+    document.getElementById("m6").style.backgroundColor = '#C3FF94'
+} else if (document.getElementById('d6').textContent == document.getElementById('y4').textContent == document.getElementById('m2').textContent){
+    document.getElementById('txt5').innerHTML = "• 0t เสื่อม ลาภ มิ ดี แล"
+    document.getElementById("d6").style.backgroundColor = '#C3FF94'
+    document.getElementById("y4").style.backgroundColor = '#C3FF94'
+    document.getElementById("m2").style.backgroundColor = '#C3FF94'
+} else if (document.getElementById('d6').textContent == document.getElementById('y4').textContent){
+    document.getElementById('txt5').innerHTML = "• ดี ยัก ขะ บริบูรณ นัก จะ มี คน นำ สิ่ง ของ มา ให้ เนือง ๆ จะ ทำราชการ สิ่ง ให จะ มี ผล มาก"
+    document.getElementById("d6").style.backgroundColor = '#C3FF94'
+    document.getElementById("y4").style.backgroundColor = '#C3FF94'
+} else if (document.getElementById('d6').textContent == document.getElementById('y5').textContent){
+    document.getElementById('txt5').innerHTML = "• ผู้ นั้น ถึง จะ มี เข้า ของ เงิน ทอง มัก จะ มี คน คอย ปอง ร้าย คิด เบียด เบียฬ ถ้า มิฉนั้น จะ ต้อง ไข้ เจ็บ เสีย เงิน ทอง จึง จะ ยัง ชั่ว แล"
+    document.getElementById("d6").style.backgroundColor = '#C3FF94'
+    document.getElementById("y5").style.backgroundColor = '#C3FF94'
+} else if (document.getElementById('d6').textContent == document.getElementById('y6').textContent){
+    document.getElementById('txt5').innerHTML = "• ผู้ นั้น ถึง จะ มี ทรัพย์ ก็ พอ ประมาณ"
+    document.getElementById("d6").style.backgroundColor = '#C3FF94'
+    document.getElementById("y6").style.backgroundColor = '#C3FF94'
+} else if (document.getElementById('d6').textContent == document.getElementById('y7').textContent){
+    document.getElementById('txt5').innerHTML = "• ผู้ นั้น ถึง จะ มี ทรัพย์ ก็ พอ ประมาณ"
+    document.getElementById("d6").style.backgroundColor = '#C3FF94'
+    document.getElementById("y7").style.backgroundColor = '#C3FF94'
+} if (document.getElementById('y4').textContent == document.getElementById('d2').textContent){
+    document.getElementById('txt6').innerHTML = "• ผู้ นั้น เสื่อม ลาภ จะ ทำ สิ่ง ใด หา ลาภ มิ ได้ แล"
+    document.getElementById("y4").style.backgroundColor = '#BF94FF'
+    document.getElementById("d2").style.backgroundColor = '#BF94FF'
+} else if (document.getElementById('y4').textContent == document.getElementById('d4').textContent){
+    document.getElementById('txt6').innerHTML = "• ผู้ นั้น จะ ได้ ลาภ ก็ เพราะ ท่าน ผู้ ใหญ่ สงเคราะห์ ให้ แล"
+    document.getElementById("y4").style.backgroundColor = '#BF94FF'
+    document.getElementById("d4").style.backgroundColor = '#BF94FF'
+} else if (document.getElementById('y4').textContent == document.getElementById('d5').textContent){
+    document.getElementById('txt6').innerHTML = "• ผู้ นั้น จะ ได้ ลาภ ก็ เพราะ ท่าน ผู้ ใหญ่ สงเคราะห์ ให้ แล"
+    document.getElementById("y4").style.backgroundColor = '#BF94FF'
+    document.getElementById("d5").style.backgroundColor = '#BF94FF'
+} else if (document.getElementById('y4').textContent == document.getElementById('d6').textContent == document.getElementById('m6').textContent){
+    document.getElementById('txt6').innerHTML = "• ดวง ชาตา มิ ดี แล"
+    document.getElementById("y4").style.backgroundColor = '#BF94FF'
+    document.getElementById("d6").style.backgroundColor = '#BF94FF'
+    document.getElementById("m6").style.backgroundColor = '#BF94FF'
+} else if (document.getElementById('y4').textContent == document.getElementById('d6').textContent == document.getElementById('m2').textContent){
+    document.getElementById('txt6').innerHTML = "• ดวง ชาตา มิ ดี แล"
+    document.getElementById("y4").style.backgroundColor = '#BF94FF'
+    document.getElementById("d6").style.backgroundColor = '#BF94FF'
+    document.getElementById("m2").style.backgroundColor = '#BF94FF'
+} else if (document.getElementById('y4').textContent == document.getElementById('d6').textContent){
+    document.getElementById('txt6').innerHTML = "• ผู้ นั้น จะ ได้ ทรัพย์ สมบัติ บริบูรณ มั่ง คั่ง ถ้า เปน ข้า ราชการ จะ ได้ รับ บำเหน็ด รางวัล จะ เปน ผู้ บีิบูรณ ด้วย ทรัพย์"
+    document.getElementById("y4").style.backgroundColor = '#BF94FF'
+    document.getElementById("d6").style.backgroundColor = '#BF94FF'
+} else if (document.getElementById('y4').textContent == document.getElementById('m3').textContent){
+    document.getElementById('txt6').innerHTML = "• ผู้ นั้น จะ ได้ ลาภ เพราะ มิตร สหาย จะ เสื่อม จาก ลาภ ก็ เพราะ มิตร สหาย"
+    document.getElementById("y4").style.backgroundColor = '#BF94FF'
+    document.getElementById("m3").style.backgroundColor = '#BF94FF'
+} else if (document.getElementById('y4').textContent == document.getElementById('d1').textContent){
+    document.getElementById('txt6').innerHTML = "• จะ ได้ ลาภ"
+    document.getElementById("y4").style.backgroundColor = '#BF94FF'
+    document.getElementById("d1").style.backgroundColor = '#BF94FF'
+} else if (document.getElementById('y4').textContent == document.getElementById('d6').textContent){
+    document.getElementById('txt6').innerHTML = "• จะ ได้ ลาภ"
+    document.getElementById("y4").style.backgroundColor = '#BF94FF'
+    document.getElementById("d6").style.backgroundColor = '#BF94FF'
+} else if (document.getElementById('y4').textContent == document.getElementById('d3').textContent){
+    document.getElementById('txt6').innerHTML = "• จะ ได้ ลาภ"
+    document.getElementById("y4").style.backgroundColor = '#BF94FF'
+    document.getElementById("d3").style.backgroundColor = '#BF94FF'
+} else if (document.getElementById('y4').textContent == document.getElementById('d2').textContent){
+    document.getElementById('txt6').innerHTML = "• จะ เสื่อม ลาภ แล"
+    document.getElementById("y4").style.backgroundColor = '#BF94FF'
+    document.getElementById("d2").style.backgroundColor = '#BF94FF'
+} else if (document.getElementById('y4').textContent == document.getElementById('m2').textContent){
+    document.getElementById('txt6').innerHTML = "• ผู้ นั้น จะ เสื่อม ลาภ ถึง จะ ได้ ก็ ไม่ มาก แล"
+    document.getElementById("y4").style.backgroundColor = '#BF94FF'
+    document.getElementById("m2").style.backgroundColor = '#BF94FF'
+} else if (document.getElementById('y4').textContent == document.getElementById('m4').textContent){
+    document.getElementById('txt6').innerHTML = "• ผู้ นั้น จะ ได้ ลาภ จะ เสีย ลาภ ก็ เพราะ พี่ น้อง ญาติ ของ ของ ตน"
+    document.getElementById("y4").style.backgroundColor = '#BF94FF'
+    document.getElementById("m4").style.backgroundColor = '#BF94FF'
+} else if (document.getElementById('y4').textContent == document.getElementById('d3').textContent){
+    document.getElementById('txt6').innerHTML = "• จะ ได้ ลาภ บริบุณณ เพราะ ญาติ์"
+    document.getElementById("y4").style.backgroundColor = '#BF94FF'
+    document.getElementById("d3").style.backgroundColor = '#BF94FF'
+} else if (document.getElementById('y4').textContent == document.getElementById('d6').textContent){
+    document.getElementById('txt6').innerHTML = "• จะ ได้ ลาภ บริบุณณ เพราะ ญาติ์"
+    document.getElementById("y4").style.backgroundColor = '#BF94FF'
+    document.getElementById("d6").style.backgroundColor = '#BF94FF'
+} else if (document.getElementById('y4').textContent == document.getElementById('d2').textContent){
+    document.getElementById('txt6').innerHTML = "• จะ เสีย ลาภ เพราะ ญาติ พี่ น้อง แล"
+    document.getElementById("y4").style.backgroundColor = '#BF94FF'
+    document.getElementById("d2").style.backgroundColor = '#BF94FF'
+} else if (document.getElementById('y4').textContent == document.getElementById('m5').textContent){
+    document.getElementById('txt6').innerHTML = "• จะ ได้ ลาภ จะ เสีย ลาภ ก็ เพราะ ลูก เต้า ของ ตน"
+    document.getElementById("y4").style.backgroundColor = '#BF94FF'
+    document.getElementById("m5").style.backgroundColor = '#BF94FF'
+} else if (document.getElementById('y4').textContent == document.getElementById('d2').textContent){
+    document.getElementById('txt6').innerHTML = "• จะ เสีย ลาภ เพราะ บุตร แล"
+    document.getElementById("y4").style.backgroundColor = '#BF94FF'
+    document.getElementById("d2").style.backgroundColor = '#BF94FF'
+} else if (document.getElementById('y4').textContent == document.getElementById('m6').textContent){
+    document.getElementById('txt6').innerHTML = "• ผู้ นั้น เสื่อม ลาภ นัก แล"
+    document.getElementById("y4").style.backgroundColor = '#BF94FF'
+    document.getElementById("m6").style.backgroundColor = '#BF94FF'
+} if (document.getElementById('m7').textContent == document.getElementById('y3').textContent == document.getElementById('d6').textContent){
+    document.getElementById('txt6').innerHTML = "• ผู้ นั้น จะ บริ บูรณ์ เพราะ คู่ ของ ตน"
+    document.getElementById("m7").style.backgroundColor = '#BF94FF'
+    document.getElementById("y3").style.backgroundColor = '#BF94FF'
+    document.getElementById("d6").style.backgroundColor = '#BF94FF'
+} else if (document.getElementById('m7').textContent == document.getElementById('y3').textContent == document.getElementById('d3').textContent){
+    document.getElementById('txt6').innerHTML = "• ผู้ นั้น จะ บริ บูรณ์ เพราะ คู่ ของ ตน"
+    document.getElementById("m7").style.backgroundColor = '#BF94FF'
+    document.getElementById("y3").style.backgroundColor = '#BF94FF'
+    document.getElementById("d3").style.backgroundColor = '#BF94FF'
+} else if (document.getElementById('m7').textContent == document.getElementById('y3').textContent == document.getElementById('d2').textContent){
+    document.getElementById('txt6').innerHTML = "• จะ เสีย ลาภ เพราะ คู่ ของ ตน แล"
+    document.getElementById("m7").style.backgroundColor = '#BF94FF'
+    document.getElementById("y3").style.backgroundColor = '#BF94FF'
+    document.getElementById("d2").style.backgroundColor = '#BF94FF'
+} else if (document.getElementById('m7').textContent == document.getElementById('y3').textContent){
+    document.getElementById('txt6').innerHTML = "• ผู้ นั้น จะ ได้ ลาภ จะ เสีย ลาภ ก็ เพราะ คู่ ของ ตน"
+    document.getElementById("m7").style.backgroundColor = '#BF94FF'
+    document.getElementById("y3").style.backgroundColor = '#BF94FF'
+} if (document.getElementById('d4').textContent == document.getElementById('m6').textContent){
+    document.getElementById('txt7').innerHTML = "• บิดา มัก เกลียด ชัง นัก ถ้า มิ ฉนั้น ผู้ นั้น จะ ต้อง ลำบาก เพราะ บิดา แล"
+    document.getElementById("d4").style.backgroundColor = '#EDA6FE'
+    document.getElementById("m6").style.backgroundColor = '#EDA6FE'
+} else if (document.getElementById('d5').textContent == document.getElementById('m6').textContent){
+    document.getElementById('txt7').innerHTML = "• มารดา มัก เกลียด ชัง นัก ถ้า มิ ฉนั้น ผู้ นั้น จะ ต้อง ลำบาก เพราะ มารดา แล"
+    document.getElementById("d5").style.backgroundColor = '#EDA6FE'
+    document.getElementById("m6").style.backgroundColor = '#EDA6FE'
+} else if (document.getElementById('d4').textContent == document.getElementById('y1').textContent){
+    document.getElementById('txt7').innerHTML = "• ผู้ นั้น จะ กำพร้า บิดา ถ้า มิ ฉนั้น จะ ต้อง จาก บิดา แต่ ยัง เยาว์ แล"
+    document.getElementById("d4").style.backgroundColor = '#EDA6FE'
+    document.getElementById("y1").style.backgroundColor = '#EDA6FE'
+} else if (document.getElementById('d5').textContent == document.getElementById('y1').textContent){
+    document.getElementById('txt7').innerHTML = "• ผู้ นั้น จะ กำพร้า มารดา ถ้า มิ ฉนั้น จะ ต้อง จาก มารดา แต่ ยัง เยาว์ แล"
+    document.getElementById("d5").style.backgroundColor = '#EDA6FE'
+    document.getElementById("y1").style.backgroundColor = '#EDA6FE'
+} else if (document.getElementById('d4').textContent == document.getElementById('y2').textContent){
+    document.getElementById('txt7').innerHTML = "• ผู้ นั้น มี ตระกูล ดี บิดา ของ ผู้ นั้น เปน คน มี ยศ ศักดิ์ เปน คน ใจ บุญ เจรจา สุ ภาพ เรียบ ร้อย ดี นัก แล"
+    document.getElementById("d4").style.backgroundColor = '#EDA6FE'
+    document.getElementById("y2").style.backgroundColor = '#EDA6FE'
+} else if (document.getElementById('d5').textContent == document.getElementById('y2').textContent){
+    document.getElementById('txt7').innerHTML = "• ผู้ นั้น มี ตระกูล ดี มารดา ของ ผู้ นั้น เปน คน มี ยศ ศักดิ์ เปน คน ใจ บุญ เจรจา สุ ภาพ เรียบ ร้อย ดี นัก แล"
+    document.getElementById("d5").style.backgroundColor = '#EDA6FE'
+    document.getElementById("y2").style.backgroundColor = '#EDA6FE'
+} else if (document.getElementById('d4').textContent == document.getElementById('y3').textContent){
+    document.getElementById('txt7').innerHTML = "• บิดา ของ ผู้ นั้น เปน คน มี ทุกข์ มาก แล"
+    document.getElementById("d4").style.backgroundColor = '#EDA6FE'
+    document.getElementById("y3").style.backgroundColor = '#EDA6FE'
+} else if (document.getElementById('d5').textContent == document.getElementById('y3').textContent){
+    document.getElementById('txt7').innerHTML = "• มารดา ของ ผู้ นั้น เปน คน มี ทุกข์ มาก แล"
+    document.getElementById("d5").style.backgroundColor = '#EDA6FE'
+    document.getElementById("y3").style.backgroundColor = '#EDA6FE'
+} else if (document.getElementById('d4').textContent == document.getElementById('y4').textContent){
+    document.getElementById('txt7').innerHTML = "• บิดา ของผู้ นั้น เปน คน มั่ง คั่ง มั่ง มี บริบูรณ นัก แล"
+    document.getElementById("d4").style.backgroundColor = '#EDA6FE'
+    document.getElementById("y4").style.backgroundColor = '#EDA6FE'
+} else if (document.getElementById('d5').textContent == document.getElementById('y4').textContent){
+    document.getElementById('txt7').innerHTML = "• มารดา ของผู้ นั้น เปน คน มั่ง คั่ง มั่ง มี บริบูรณ นัก แล"
+    document.getElementById("d5").style.backgroundColor = '#EDA6FE'
+    document.getElementById("y4").style.backgroundColor = '#EDA6FE'
+} else if (document.getElementById('d4').textContent == document.getElementById('y5').textContent){
+    document.getElementById('txt7').innerHTML = "• บิดา ของ ผู้ นั้น มัก จะ เปน คน ขี้ โรค อีก ไนยหนึ่ง ทาย ว่า บิดา มัก เบียด เบียฬ บุตร ได้ ความ เดือด ร้อน"
+    document.getElementById("d4").style.backgroundColor = '#EDA6FE'
+    document.getElementById("y5").style.backgroundColor = '#EDA6FE'
+} else if (document.getElementById('d5').textContent == document.getElementById('y5').textContent){
+    document.getElementById('txt7').innerHTML = "• มารดา ของ ผู้ นั้น มัก จะ เปน คน ขี้ โรค อีก ไนยหนึ่ง ทาย ว่า บิดา มัก เบียด เบียฬ บุตร ได้ ความ เดือด ร้อน"
+    document.getElementById("d5").style.backgroundColor = '#EDA6FE'
+    document.getElementById("y5").style.backgroundColor = '#EDA6FE'
+} else if (document.getElementById('d4').textContent == document.getElementById('y6').textContent){
+    document.getElementById('txt7').innerHTML = "• บิดา ของ ผู้ นั้น มัก จะ เปน คน อาภัพ ต้อง เหนื่อย มาก แล"
+    document.getElementById("d4").style.backgroundColor = '#EDA6FE'
+    document.getElementById("y6").style.backgroundColor = '#EDA6FE'
+} else if (document.getElementById('d4').textContent == document.getElementById('y7').textContent){
+    document.getElementById('txt7').innerHTML = "• บิดา ของ ผู้ นั้น มัก จะ เปน คน อาภัพ ต้อง เหนื่อย มาก แล"
+    document.getElementById("d4").style.backgroundColor = '#EDA6FE'
+    document.getElementById("y7").style.backgroundColor = '#EDA6FE'
+} else if (document.getElementById('d5').textContent == document.getElementById('y6').textContent){
+    document.getElementById('txt7').innerHTML = "• มารดา ของ ผู้ นั้น มัก จะ เปน คน อาภัพ ต้อง เหนื่อย มาก แล"
+    document.getElementById("d5").style.backgroundColor = '#EDA6FE'
+    document.getElementById("y6").style.backgroundColor = '#EDA6FE'
+} else if (document.getElementById('d5').textContent == document.getElementById('y7').textContent){
+    document.getElementById('txt7').innerHTML = "• มารดา ของ ผู้ นั้น มัก จะ เปน คน อาภัพ ต้อง เหนื่อย มาก แล"
+    document.getElementById("d5").style.backgroundColor = '#EDA6FE'
+    document.getElementById("y7").style.backgroundColor = '#EDA6FE'
+} if (document.getElementById('m3').textContent == document.getElementById('d2').textContent){
+    document.getElementById('txt8').innerHTML = "• ผู้ นั้น จะ คบ เพื่อน ที่ ดี ไม่ ได้ จะ มี แต่ เพื่อน ชั่ว ให้ โทษ แก่ ตน อีก ไนย หนึ่ง ทาย ว่า ผู้ นั้น จะ ต้อง ชั่ว เพราะ มิตร สหาย ชัก นำ แล"
+    document.getElementById("m3").style.backgroundColor = '#FF9094'
+    document.getElementById("d2").style.backgroundColor = '#FF9094'
+} else if (document.getElementById('m3').textContent == document.getElementById('d4').textContent){
+    document.getElementById('txt8').innerHTML = "• ผู้ นั้น จะ มี มิตร สหาย ที่ ดี มิตร นั้น จะ อุปถัมภ์ ฅน เช่น อย่าง บิดา มารดา อุปถัมภ์ แก่ บุตร แล"
+    document.getElementById("m3").style.backgroundColor = '#FF9094'
+    document.getElementById("d4").style.backgroundColor = '#FF9094'
+} else if (document.getElementById('m3').textContent == document.getElementById('d7').textContent){
+    document.getElementById('txt8').innerHTML = "• ผู้ นั้น ถึง จะ คบ ค้า สมาคม กับ ใคร ก็ เปน แต่ ปาน กลาง จะ หมาย พึ่ง มิตร นั้น ไม่ ได้ จะ พึ่ง ได้ ก็ แต่ การ ไม่ สำคัญ แล"
+    document.getElementById("m3").style.backgroundColor = '#FF9094'
+    document.getElementById("d7").style.backgroundColor = '#FF9094'
+} else if (document.getElementById('m3').textContent == document.getElementById('y1').textContent){
+    document.getElementById('txt8').innerHTML = "• ผู้ นั้น เปน คน ใจ คอ โดด เดี่ยว ไม่ ชอบ คบ หา ท่าน ผู้ ใด ถึง คน ที่ ชอบ อัชฌาไศย ก็ เปน แต่ ปาน กลาง ไม่ สนิท ชิด ชม กัน อีก ไนยหนึ่ง ท่าน ทาย ว่า ผู้ นั้น ไม่ มี ที่ อุปถัมภ์ แล"
+    document.getElementById("m3").style.backgroundColor = '#FF9094'
+    document.getElementById("y1").style.backgroundColor = '#FF9094'
+} else if (document.getElementById('m3').textContent == document.getElementById('y2').textContent){
+    document.getElementById('txt8').innerHTML = "• ผู้ นั้น จะ ไป สาระทิศ ใด มัก มี ผู้ อุปถัมภ์ ท่าน ผู้ หลัก ผู้ ใหญ่ มัก จะ รักใคร่ มาก ทำ ราชการ ดี มี สนับ สนุน แล"
+    document.getElementById("m3").style.backgroundColor = '#FF9094'
+    document.getElementById("y2").style.backgroundColor = '#FF9094'
+} else if (document.getElementById('m3').textContent == document.getElementById('y3').textContent){
+    document.getElementById('txt8').innerHTML = "• ผู้ นั้น มัก จะ ไม่ มี ที่ พึ่ง พา อาไศรย จะ มี ที่ ชอบ พอ กัน ก็ เปน คน ต่ำ ศักดิ์ กว่า ตน จะ พึ่ง พา อาไศรย ไม่ ได้ อีก ไนยหนึ่ง ทาย ว่า ผู้ นั้น จะ ได้ ทุกข์ เพราะ เพื่อน แล"
+    document.getElementById("m3").style.backgroundColor = '#FF9094'
+    document.getElementById("y3").style.backgroundColor = '#FF9094'
+} else if (document.getElementById('m3').textContent == document.getElementById('y5').textContent){
+    document.getElementById('txt8').innerHTML = "• ผู้ นั้น จะ คบ หา ผู้ ใด ที่ จะ หมาย พึ่ง เขา ไม่ ได้ เลย เขา คอย จะ เบียด เบียฬ เรา แล"
+    document.getElementById("m3").style.backgroundColor = '#FF9094'
+    document.getElementById("y5").style.backgroundColor = '#FF9094'
+} else if (document.getElementById('m3').textContent == document.getElementById('y6').textContent){
+    document.getElementById('txt8').innerHTML = "• ผู้ นั้น มัก พอ ใจ คบ คน ต่ำ ศักดิ์ อีก ไหนหนึ่ง ทาย ว่า ผู้ นั้น จะ มี ค่า ทาษ มัก จะ ไม่ ยำ เกรง แล"
+    document.getElementById("m3").style.backgroundColor = '#FF9094'
+    document.getElementById("y6").style.backgroundColor = '#FF9094'
+} else if (document.getElementById('m3').textContent == document.getElementById('y7').textContent){
+    document.getElementById('txt8').innerHTML = "• ผู้ นั้น มัก พอ ใจ คบ คน ต่ำ ศักดิ์ อีก ไหนหนึ่ง ทาย ว่า ผู้ นั้น จะ มี ค่า ทาษ มัก จะ ไม่ ยำ เกรง แล"
+    document.getElementById("m3").style.backgroundColor = '#FF9094'
+    document.getElementById("y7").style.backgroundColor = '#FF9094'
+} if (document.getElementById('m4').textContent == document.getElementById('d2').textContent){
+    document.getElementById('txt9').innerHTML = "• ผู้ นั้น จะ มี พวก พ้อง พี่ น้อง เปน คน ต่ำ ช้า จะ เอา เปน ที่ พึ่ง มิ ได้ แล"
+    document.getElementById("m4").style.backgroundColor = '#B6BDBE'
+    document.getElementById("d2").style.backgroundColor = '#B6BDBE'
+} else if (document.getElementById('m4').textContent == document.getElementById('d4').textContent){
+    document.getElementById('txt9').innerHTML = "• ผู้ นั้น จะ มี วงษา คณา ญาติ์ ข้าง ฝ่าย บิดา มาก"
+    document.getElementById("m4").style.backgroundColor = '#B6BDBE'
+    document.getElementById("d4").style.backgroundColor = '#B6BDBE'
+} else if (document.getElementById('m4').textContent == document.getElementById('d5').textContent){
+    document.getElementById('txt9').innerHTML = "• ผู้ นั้น จะ มี วงษา คณา ญาติ์ ข้าง ฝ่าย มารดา มาก"
+    document.getElementById("m4").style.backgroundColor = '#B6BDBE'
+    document.getElementById("d5").style.backgroundColor = '#B6BDBE'
+} else if (document.getElementById('m4').textContent == document.getElementById('d6').textContent){
+    document.getElementById('txt9').innerHTML = "• ผู้ นั้น จะ มี พวก พ้อง ที่ เปน คน มั่ง มี บริบูรณ์ จะ ได้ เปน ที่ พึ่ง แล"
+    document.getElementById("m4").style.backgroundColor = '#B6BDBE'
+    document.getElementById("d6").style.backgroundColor = '#B6BDBE'
+} else if (document.getElementById('m4').textContent == document.getElementById('d7').textContent){
+    document.getElementById('txt9').innerHTML = "• ผู้ นั้น ถึง จะ มี พวกพ้อง พี่น้อง ก็ เปน แค่ ปาน กลาง จะ พึ่งพา อาไศรย ได้ ก็ แต่ การ ไม่ สำหลัก สำคัญ แล"
+    document.getElementById("m4").style.backgroundColor = '#B6BDBE'
+    document.getElementById("d7").style.backgroundColor = '#B6BDBE'
+} else if (document.getElementById('m4').textContent == document.getElementById('y1').textContent){
+    document.getElementById('txt9').innerHTML = "• ผู้ นั้น ไร้ ญาติกา มีพวกพ้อง พี่น้องน้อย มิฉนั้น จะต้อง ห่างไกล จากญาติกา แล"
+    document.getElementById("m4").style.backgroundColor = '#B6BDBE'
+    document.getElementById("y1").style.backgroundColor = '#B6BDBE'
+} else if (document.getElementById('m4').textContent == document.getElementById('y2').textContent){
+    document.getElementById('txt9').innerHTML = "• ผู้ นั้น จะ มี พวก พ้อง พี่ น้อง ที่ มี วาศนา บริบูรณ์ จะ ได้ พึ่ง ญาติ์ อีก ไหนหนึ่ง ทาย ว่า เปน คน มี ตระ กูล ดี แล"
+    document.getElementById("m4").style.backgroundColor = '#B6BDBE'
+    document.getElementById("y2").style.backgroundColor = '#B6BDBE'
+} else if (document.getElementById('m4').textContent == document.getElementById('y3').textContent){
+    document.getElementById('txt9').innerHTML = "• ผู้ นั้น มัก จะ มี พวก พ้อง พี่ น้อง ที่ คอย เบียด เบียฬ ทำ ให้ เรา ได้ ความ ร้อน ใจ แล"
+    document.getElementById("m4").style.backgroundColor = '#B6BDBE'
+    document.getElementById("y3").style.backgroundColor = '#B6BDBE'
+} else if (document.getElementById('m4').textContent == document.getElementById('y6').textContent){
+    document.getElementById('txt9').innerHTML = "• ผู้ นั้น จะ มี พี่ น้อง พวก พ้อง ที่ ต่ำ วาศนา จน ยาก แล"
+    document.getElementById("m4").style.backgroundColor = '#B6BDBE'
+    document.getElementById("y6").style.backgroundColor = '#B6BDBE'
+} else if (document.getElementById('m4').textContent == document.getElementById('y7').textContent){
+    document.getElementById('txt9').innerHTML = "• ผู้ นั้น จะ มี พี่ น้อง พวก พ้อง ที่ ต่ำ วาศนา จน ยาก แล"
+    document.getElementById("m4").style.backgroundColor = '#B6BDBE'
+    document.getElementById("y7").style.backgroundColor = '#B6BDBE'
+} if (document.getElementById('m5').textContent == document.getElementById('d2').textContent){
+    document.getElementById('txt10').innerHTML = "• ผู้ นั้น จะ มี บุตร ชั่ว ช้า บุตร นั้น จะ ไม่ อยู่ ใน โอวาท ของ ตน  มัก จะ ทำ ให้ บิดา มารดา ต้อง เดือด เนื้อ ร้อน ใจ แล"
+    document.getElementById("m5").style.backgroundColor = '#757AFF'
+    document.getElementById("d2").style.backgroundColor = '#757AFF'
+} else if (document.getElementById('m5').textContent == document.getElementById('d4').textContent){
+    document.getElementById('txt10').innerHTML = "• ผู้ นั้น จะ มี ลูกหัวปี เปน ผู้ ชาย อีก ไนยหนึ่ง ทาย ว่า บุตร นั้น คล้าย คลึง บิดา แล"
+    document.getElementById("m5").style.backgroundColor = '#757AFF'
+    document.getElementById("d4").style.backgroundColor = '#757AFF'
+} else if (document.getElementById('m5').textContent == document.getElementById('d5').textContent){
+    document.getElementById('txt10').innerHTML = "• ผู้ นั้น จะ มี ลูก หัวปี เปน ผู้ หญิง อีก ไนยหนึ่ง ทาย ว่า บุตร นั้น คล้าย คลึง ข้าง มารดา แล"
+    document.getElementById("m5").style.backgroundColor = '#757AFF'
+    document.getElementById("d5").style.backgroundColor = '#757AFF'
+} else if (document.getElementById('m5').textContent == document.getElementById('d7').textContent){
+    document.getElementById('txt10').innerHTML = "• ผู้ นั้น จะ มี บุตร ก็ เปน แต่ คน ปาน กลางไม่ ดี นัก ไม่ ชั่ว นัก แล"
+    document.getElementById("m5").style.backgroundColor = '#757AFF'
+    document.getElementById("d7").style.backgroundColor = '#757AFF'
+} else if (document.getElementById('m5').textContent == document.getElementById('y1').textContent){
+    document.getElementById('txt10').innerHTML = "• ผู้ นั้น จะ เลี้ยง ลูก ยาก แล"
+    document.getElementById("m5").style.backgroundColor = '#757AFF'
+    document.getElementById("y1").style.backgroundColor = '#757AFF'
+} else if (document.getElementById('m5').textContent == document.getElementById('y2').textContent){
+    document.getElementById('txt10').innerHTML = "• ผู้ นั้น จะ มี บุตร ดี จะ ได้ พึ่ง บุตร แล"
+    document.getElementById("m5").style.backgroundColor = '#757AFF'
+    document.getElementById("y2").style.backgroundColor = '#757AFF'
+} else if (document.getElementById('m5').textContent == document.getElementById('y3').textContent){
+    document.getElementById('txt10').innerHTML = "• ผู้ นั้น จะ มี บุตร มิ ดี บุตร นั้น จะ อาภัพ แล"
+    document.getElementById("m5").style.backgroundColor = '#757AFF'
+    document.getElementById("y3").style.backgroundColor = '#757AFF'
+} else if (document.getElementById('m5').textContent == document.getElementById('y4').textContent){
+    document.getElementById('txt10').innerHTML = "• ผู้ นั้น จะ มี บุตร มี บุญ บุตร นั้น จะ ได้ สืบ ตระกูล แล"
+    document.getElementById("m5").style.backgroundColor = '#757AFF'
+    document.getElementById("y4").style.backgroundColor = '#757AFF'
+} else if (document.getElementById('m5').textContent == document.getElementById('y5').textContent){
+    document.getElementById('txt10').innerHTML = "• ผู้ นั้น จะ มี บุตร ขี้ โรค อีก ไหน หนึ่ง ทาย ว่า จะ พึ่ง บุตร มิได้ แล"
+    document.getElementById("m5").style.backgroundColor = '#757AFF'
+    document.getElementById("y5").style.backgroundColor = '#757AFF'
+} else if (document.getElementById('m5').textContent == document.getElementById('y6').textContent){
+    document.getElementById('txt10').innerHTML = "• ผู้ นั้น จะ มี บุตร ตฃต่ำ ชาติ์ วาศนา อีกไหนหนึ่ง ทาย ว่า ผู้ นั้น จะ เกิด บุตร กับ ทาษี แล"
+    document.getElementById("m5").style.backgroundColor = '#757AFF'
+    document.getElementById("y6").style.backgroundColor = '#757AFF'
+} else if (document.getElementById('m5').textContent == document.getElementById('y7').textContent){
+    document.getElementById('txt10').innerHTML = "• ผู้ นั้น จะ มี บุตร ตฃต่ำ ชาติ์ วาศนา อีกไหนหนึ่ง ทาย ว่า ผู้ นั้น จะ เกิด บุตร กับ ทาษี แล"
+    document.getElementById("m5").style.backgroundColor = '#757AFF'
+    document.getElementById("y7").style.backgroundColor = '#757AFF'
+} if (document.getElementById('m7').textContent == document.getElementById('d2').textContent){
+    document.getElementById('txt11').innerHTML = "• ผู้ นั้น จะ ได้ คู่ มิดี วาศนา สู้ เรา ไม่ ได้ แล"
+    document.getElementById("m7").style.backgroundColor = '#26F4A8'
+    document.getElementById("d2").style.backgroundColor = '#26F4A8'
+} else if (document.getElementById('m7').textContent == document.getElementById('d4').textContent){
+    document.getElementById('txt11').innerHTML = "•  ผู้ นั้น จะ ได้ คู่ ดี พึ่ง พา อาไศรย ได้ เปน ชาย มัก จะ ต้อง กลัว เมีย ถ้า เปน หญิง จะ อยู่ ใน โอวาท ผัว อีก ไนยหนึ่ง ท่าน ทาย ว่า ผู้ นั้น จะ มี คู่ ที่ อายุ แก่ กว่า ตัว แล"
+    document.getElementById("m7").style.backgroundColor = '#26F4A8'
+    document.getElementById("d4").style.backgroundColor = '#26F4A8'
+} else if (document.getElementById('m7').textContent == document.getElementById('d5').textContent){
+    document.getElementById('txt11').innerHTML = "•  ผู้ นั้น จะ ได้ คู่ ดี พึ่ง พา อาไศรย ได้ เปน ชาย มัก จะ ต้อง กลัว เมีย ถ้า เปน หญิง จะ อยู่ ใน โอวาท ผัว อีก ไนยหนึ่ง ท่าน ทาย ว่า ผู้ นั้น จะ มี คู่ ที่ อายุ แก่ กว่า ตัว แล"
+    document.getElementById("m7").style.backgroundColor = '#26F4A8'
+    document.getElementById("d5").style.backgroundColor = '#26F4A8'
+} else if (document.getElementById('m7').textContent == document.getElementById('d7').textContent){
+    document.getElementById('txt11').innerHTML = "• ผู้ นั้น จะ ได้ คู่ ที่ เปน คน ปาน กลาง ไม่ ชั่ว นัก ไม่ ดี นัก แล"
+    document.getElementById("m7").style.backgroundColor = '#26F4A8'
+    document.getElementById("d7").style.backgroundColor = '#26F4A8'
+} else if (document.getElementById('m7').textContent == document.getElementById('d6').textContent){
+    document.getElementById('txt11').innerHTML = "• ผู้ นั้น จะ ได้ คู่ ที่ ดี เปน คน มี โภค ทรัพย์ สมบัติ มาก จะ ได้ พึ่ง กัน แล"
+    document.getElementById("m7").style.backgroundColor = '#26F4A8'
+    document.getElementById("d6").style.backgroundColor = '#26F4A8'
+} else if (document.getElementById('m7').textContent == document.getElementById('y1').textContent){
+    document.getElementById('txt11').innerHTML = "• ผู้ นั้น ไร้ คู่ ถ้า มิฉนั้น จะ อยู่ กิน ด้วย กัน ไม่ ยืด แล"
+    document.getElementById("m7").style.backgroundColor = '#26F4A8'
+    document.getElementById("y1").style.backgroundColor = '#26F4A8'
+} else if (document.getElementById('m7').textContent == document.getElementById('y2').textContent){
+    document.getElementById('txt11').innerHTML = "• ผู้ นั้น จะ มี คู่ ที่ ดี เปน คน สุภาพ เรียบร้อย จะ เปน ที่พึ่งพา อาไศรย ได้ แล"
+    document.getElementById("m7").style.backgroundColor = '#26F4A8'
+    document.getElementById("y1").style.backgroundColor = '#26F4A8'
+} else if (document.getElementById('m7').textContent == document.getElementById('y3').textContent){
+    document.getElementById('txt11').innerHTML = "• ผู้ นั้น จะ ได้ คู่ ที่ มี ทุกข์ มาก จะ ลำบาก เพราะ คู่ ของ ตน ถ้า มิฉนั้น จะ ได้ คู่ ที่ เปน ลูก กำพร้า แล"
+    document.getElementById("m7").style.backgroundColor = '#26F4A8'
+    document.getElementById("y3").style.backgroundColor = '#26F4A8'
+} else if (document.getElementById('m7').textContent == document.getElementById('y5').textContent){
+    document.getElementById('txt11').innerHTML = "• ผู้ นั้น จะ ได้ คู่ มิดี มัก จะ เบียด เบียฬ กัน มัก จะ วิวาท กัน มัก จะ หึง หวง กัน แล"
+    document.getElementById("m7").style.backgroundColor = '#26F4A8'
+    document.getElementById("y5").style.backgroundColor = '#26F4A8'
+} else if (document.getElementById('m7').textContent == document.getElementById('y6').textContent){
+    document.getElementById('txt11').innerHTML = "• ผู้ นั้น จะ ได้ คู่ ที่ ต่ำ วาศนา กว่า ตน แล"
+    document.getElementById("m7").style.backgroundColor = '#26F4A8'
+    document.getElementById("y6").style.backgroundColor = '#26F4A8'
+} else if (document.getElementById('m7').textContent == document.getElementById('y7').textContent){
+    document.getElementById('txt11').innerHTML = "• ผู้ นั้น จะ ได้ คู่ ที่ ต่ำ วาศนา กว่า ตน แล"
+    document.getElementById("m7").style.backgroundColor = '#26F4A8'
+    document.getElementById("y7").style.backgroundColor = '#26F4A8'
+} else if (document.getElementById('m7').textContent == document.getElementById('y4').textContent){
+    document.getElementById('txt11').innerHTML = "• ผู้ นั้น จะ ได้ คู่ ที่ ดี จะ พึ่ง พา อาไศรย ได้ แล"
+    document.getElementById("m7").style.backgroundColor = '#26F4A8'
+    document.getElementById("y4").style.backgroundColor = '#26F4A8'
+} if (document.getElementById('y6').textContent == document.getElementById('d2').textContent){
+    document.getElementById('txt12').innerHTML = "• ผู้ นั้น จะ มี ทาษ เปน คน ชั่ว มัก จะ ชี้ หนี ไม่ ซื่อ ตรง ต่อ เรา เลย อย่า ไว้ ใจ ทาษ แล"
+    document.getElementById("y6").style.backgroundColor = '#46F23D'
+    document.getElementById("d2").style.backgroundColor = '#46F23D'
+} else if (document.getElementById('y7').textContent == document.getElementById('d2').textContent){
+    document.getElementById('txt12').innerHTML = "• ผู้ นั้น จะ มี ทาษ เปน คน ชั่ว มัก จะ ชี้ หนี ไม่ ซื่อ ตรง ต่อ เรา เลย อย่า ไว้ ใจ ทาษ แล"
+    document.getElementById("y7").style.backgroundColor = '#46F23D'
+    document.getElementById("d2").style.backgroundColor = '#46F23D'
+} else if (document.getElementById('y6').textContent == document.getElementById('d7').textContent){
+    document.getElementById('txt12').innerHTML = "• ผู้ นั้น ถึง จะ มี บริวาร ก็ น้อย เปน แต่ ปาน กลาง แล"
+    document.getElementById("y6").style.backgroundColor = '#46F23D'
+    document.getElementById("d7").style.backgroundColor = '#46F23D'
+} else if (document.getElementById('y7').textContent == document.getElementById('d7').textContent){
+    document.getElementById('txt12').innerHTML = "• ผู้ นั้น ถึง จะ มี บริวาร ก็ น้อย เปน แต่ ปาน กลาง แล"
+    document.getElementById("y7").style.backgroundColor = '#46F23D'
+    document.getElementById("d7").style.backgroundColor = '#46F23D'
+} else if (document.getElementById('y6').textContent == document.getElementById('m6').textContent){
+    document.getElementById('txt12').innerHTML = "• ผู้ นั้น ถึง จะ มี ผู้ ใช้ สอย ก็ ไม่ ยำ เกรง มัก คอย คิด ร้าย ต่อ เรา อย่า ไว้ ใจ มัน แล"
+    document.getElementById("y6").style.backgroundColor = '#46F23D'
+    document.getElementById("m6").style.backgroundColor = '#46F23D'
+} else if (document.getElementById('y7').textContent == document.getElementById('m6').textContent){
+    document.getElementById('txt12').innerHTML = "• ผู้ นั้น ถึง จะ มี ผู้ ใช้ สอย ก็ ไม่ ยำ เกรง มัก คอย คิด ร้าย ต่อ เรา อย่า ไว้ ใจ มัน แล"
+    document.getElementById("y7").style.backgroundColor = '#46F23D'
+    document.getElementById("m6").style.backgroundColor = '#46F23D'
+} else if (document.getElementById('y6').textContent == document.getElementById('m2').textContent){
+    document.getElementById('txt12').innerHTML = "• ผู้ นั้น ต้อง ใช้ ตัว เอง หา บริวาร มิได้ แล"
+    document.getElementById("y6").style.backgroundColor = '#46F23D'
+    document.getElementById("m3").style.backgroundColor = '#46F23D'
+} else if (document.getElementById('y7').textContent == document.getElementById('m2').textContent){
+    document.getElementById('txt12').innerHTML = "• ผู้ นั้น ต้อง ใช้ ตัว เอง หา บริวาร มิได้ แล"
+    document.getElementById("y7").style.backgroundColor = '#46F23D'
+    document.getElementById("m3").style.backgroundColor = '#46F23D'
+} if (document.getElementById('d4').textContent == "๑"){
+    document.getElementById('txt13').innerHTML = "• ผู้ นั้น พูด จา ไม่ แน่ นอน แต่ มี ปัญญา ช่าง พูด แล"
+} else if (document.getElementById('d4').textContent == "๒"){
+    document.getElementById('txt13').innerHTML = "• ผู้ นั้น เจรจา ดี เปน ที่ ชอบ ใจ เจ้า นาย ขุนนาง ผู้ เฒ่า ผู้ แก่ ถ้อย คำ อ่อน หวาน แล"
+} else if (document.getElementById('d4').textContent == "๓"){
+    document.getElementById('txt13').innerHTML = "• พูด จา โอหัง ชอบ พูด แต่ การ เก่ง กาจ นัก มัก จะ อวด ตัว สัก หน่อย แล"
+} else if (document.getElementById('d4').textContent == "๔"){
+    document.getElementById('txt13').innerHTML = "• ผู้ นั้น จะ พูดจา สิ่งไร เขา จะ เชื่อ ก็ แต่ หัว ที ภายหลัง เขา ไม่ เชื่อ แล"
+} else if (document.getElementById('d4').textContent == "๕"){
+    document.getElementById('txt13').innerHTML = "• ผู้ นั้น เจรจา อ่อน หวาน พูดจา เพราะ นัก แล"
+} else if (document.getElementById('d4').textContent == "๖"){
+    document.getElementById('txt13').innerHTML = "• ผู้ นั้น เปน คน ไม่ ค่อย จะ เชื่อ คำ ใคร มัก จะ ชอบ ติ เตียน ผู้ อื่น"
+} else if (document.getElementById('d4').textContent == "๗"){
+    document.getElementById('txt13').innerHTML = "• ผู้ นั้น เปน คน พูดจา ถูก ต้อง จะ พูด อะไร คิด แล้ว จึง พูด ถ้า โกรธ แล้ว โม ฆา มาก นัก แล"
+} if (document.getElementById('m4').textContent == "๑"){
+    document.getElementById('txt13').innerHTML = "• ผู้ นั้น ใจ ฅอ ชอบ ทาง ลักเลง มัก ไม่ เสีย ดาย ทรัพย์ รัก ก็ รัก มาก โกรธ ก็ โกรธ นาน แล"
+} else if (document.getElementById('m4').textContent == "๒"){
+    document.getElementById('txt13').innerHTML = "• ผู้ นั้น ใจ ฅอ ไม่ สุภาพ คบใคร มัก หน่าย เร็ว แล ใจ ไม่ แน่ นอน แล"
+} else if (document.getElementById('m4').textContent == "๓"){
+    document.getElementById('txt13').innerHTML = "• ผู้ นั้น ใจ ฃอ กล้า หาญ นัก ทำ ราชการ ดี แล"
+} else if (document.getElementById('m4').textContent == "๔"){
+    document.getElementById('txt13').innerHTML = "• ผู้ นั้น ใจ ดี มัก ปราณี คน เข้า ของ สิ่ง ใด ใคร ขอ ไม่ ขัด แล"
+} else if (document.getElementById('m4').textContent == "๕"){
+    document.getElementById('txt13').innerHTML = "• ผู้ นั้น เปน คน รู้ จัก คุณ ท่าน เปน คน มี ความ กะตัญญู ต่อ บิดา มารดา ครูบา อาจาริย์ มัก จะ มี วิ ชา ความ รู้ แล"
+} else if (document.getElementById('m4').textContent == "๖"){
+    document.getElementById('txt13').innerHTML = "• ผู้ นั้น ใจ คอ ไม่ เอื้อ เฟื้อ ต่อ ใคร ถ้า โกรธ แล้ว ไม่ รู้ หาย แล"
+} else if (document.getElementById('m4').textContent == "๗"){
+    document.getElementById('txt13').innerHTML = "• ผู้ นั้น เปน คน ช่าง ตฤก ตรอง น้ำ ใจ กล้า หาญ ชอบ ทำ ราชการ อาษา ท่าน แล"
+} if (document.getElementById('y4').textContent == "๑"){
+    document.getElementById('txt14').innerHTML = "• ผู้ นั้น จะ มี ไฝ ใน ที่ ลับ แต่ อาภัพ คู่ เปน ผู้ ชาย มี เมีย ๓ คน แล"
+} else if (document.getElementById('y4').textContent == "๒"){
+    document.getElementById('txt14').innerHTML = "• ผู้ นั้น รัก ไม่ แน่ นอน เปน ชาย จะ เปน เจ้า ชู้ แล"
+} else if (document.getElementById('y4').textContent == "๔" || document.getElementById('y4').textContent == "๕" || document.getElementById('y4').textContent == "๖"){
+    document.getElementById('txt14').innerHTML = "• ผู้ นั้น จะ อยู่ ศุข สำราญ เย็น ใจ ดี แล"
+} else if (document.getElementById('y4').textContent == "๗"){
+    document.getElementById('txt14').innerHTML = "• ผู้ นั้น จะ มี ตำนิ ใน ที่ ลับ เปน ชาย มี เมีย มาก จะ อยู่ ที่ไหน มัก จะไม่ สบาย ชอบ ย้าย สถาน แล"
+} if (document.getElementById('m7').textContent == "๑"){
+    document.getElementById('txt15').innerHTML = "• ผู้ นั้น จะได้ คู่ ผิว เนื้อ ดำแดง รูปร่าง น้อย อยู่ ทิศ พยัพ อาคเณย์ ตรง กัน แล"
+} else if (document.getElementById('m7').textContent == "๒"){
+    document.getElementById('txt15').innerHTML = "• ผู้ นั้น จะ ได้ คู่ ผิว เนื้อ ขาว ผอม อยู่ ทิศ บูรพา ทักษิณ ตรง กัน แล"
+} else if (document.getElementById('m7').textContent == "๓"){
+    document.getElementById('txt15').innerHTML = "• ผู้ นั้น จะ ได้ คู่ ลูก กำพร้า พ่อ แต่ ว่า เปน คน ฉลาด ใจ เย็น อยู่ ทิศ อิศาณ หระดี ตรง กัน แล"
+} else if (document.getElementById('m7').textContent == "๔"){
+    document.getElementById('txt15').innerHTML = "• จะ ได้ คู่ อายุ น้อย ผิว เนื้อ ขาว รูป งาม ใจ บุญ เปน แต่ กำพร้า อยู่ ทิศอุดร ทักษิณ ตรง กัน แล"
+} else if (document.getElementById('m7').textContent == "๕"){
+    document.getElementById('txt15').innerHTML = "• นั้น จะได้ คู่ เปน ม่าย แต่ อายุ น้อย อยู่ ทิศ ทักษิณ อุดร ตรง กัน แล"
+} else if (document.getElementById('m7').textContent == "๖"){
+    document.getElementById('txt15').innerHTML = "• ผู้ นั้น จะได้ คู่ ที่ อายุ น้อย รูป สวย แต่ ว่า สูง อยู่ ทิศ ประจิม บูรพา ตรง กัน แล"
+} else if (document.getElementById('m7').textContent == "๗"){
+    document.getElementById('txt15').innerHTML = "• ผู้ นั้น จะได้ คู่ เปน ม่าย ถ้า มิฉนั้น จะได้ คู่ อายุ มาก ผิว เนื้อ ดำ แดง เปน หญิง นม ยาน แต่ มี ความ รู้ อยู่ ทิศ อาคเณย์ พยัพ แล"
+} if (document.getElementById('m5').textContent == "๑" || document.getElementById('m5').textContent == "๓"){
+    document.getElementById('txt16').innerHTML = "• ผู้ นั้น ถ้า มี ลูก ชาย ก่อน เลี้ยง ยาก แล"
+} else if (document.getElementById('m5').textContent == "๕"){
+    document.getElementById('txt16').innerHTML = "• ทาย ว่า ผู้ นั้น มี บุตร จะ ได้ พึ่ง แล"
+} else if (document.getElementById('m5').textContent == "๒" || document.getElementById('m5').textContent == "๔" || document.getElementById('m5').textContent == "๖"){
+    document.getElementById('txt16').innerHTML = "• ผู้ นั้น มี ลูก หญิง ก่อน ดี จะ ได้ พึ่ง แล"
+}
+
+
+}
+text()
+
+}
+document.querySelector('.cal').addEventListener("click", ()=>cal())
+
+    </script>
+</body>
+</html>
